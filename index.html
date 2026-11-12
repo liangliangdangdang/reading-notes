@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>亮亮的小书屋 · 126 本</title>
+<style>
+:root{
+  --bg1:#fdf6f1; --bg2:#eef6f3; --bg3:#fdf1f3;
+  --ink:#2f3b34; --ink-soft:#5c6b62; --ink-faint:#8a988f;
+  --green:#2f5d50; --green-deep:#24483e;
+  --coral:#e8846b; --coral-soft:#f6b8a8;
+  --mint:#bfe3d2; --pink:#f7d6d0;
+  --card:rgba(255,255,255,.72); --rule:#e4d8cd;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  color:var(--ink); line-height:1.6;
+  background:radial-gradient(1200px 600px at 10% -10%, var(--pink), transparent 60%),
+    radial-gradient(1000px 500px at 100% 0%, var(--mint), transparent 55%),
+    linear-gradient(160deg, var(--bg1), var(--bg2));
+  min-height:100vh; padding-bottom:80px;}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.hero{padding:56px 0 24px;text-align:center}
+.hero .kicker{display:inline-block;font-size:13px;letter-spacing:2px;color:var(--green);background:rgba(47,93,80,.08);padding:6px 16px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-size:clamp(28px,5vw,44px);font-weight:700;color:var(--green-deep);letter-spacing:1px}
+.hero .en{font-size:13px;color:var(--ink-faint);letter-spacing:3px;margin-top:8px;text-transform:uppercase}
+.hero .stat{margin-top:20px;font-size:15px;color:var(--ink-soft)}
+.hero .stat b{color:var(--coral);font-size:22px;margin:0 2px}
+.nav{position:sticky;top:12px;z-index:20;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:12px 16px;margin:18px 0 30px;
+  background:rgba(255,255,255,.7);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border:1px solid rgba(255,255,255,.6);border-radius:18px;box-shadow:0 8px 30px rgba(47,93,80,.08)}
+.nav-chip{display:inline-flex;align-items:center;gap:5px;padding:7px 14px;border-radius:999px;font-size:13.5px;color:var(--ink-soft);
+  text-decoration:none;background:transparent;border:1px solid var(--rule);transition:.2s}
+.nav-chip:hover{background:var(--green);color:#fff;border-color:var(--green)}
+.nav-chip .cnt{background:var(--coral);color:#fff;font-size:11px;min-width:18px;height:18px;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;padding:0 5px}
+.cat{margin-bottom:28px;background:var(--card);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.65);border-radius:22px;padding:24px 26px;box-shadow:0 6px 24px rgba(47,93,80,.07)}
+.cat-head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.cat-icon{font-size:30px;line-height:1}
+.cat-head h2{font-size:22px;color:var(--green-deep);font-weight:700}
+.cat-desc{font-size:13px;color:var(--ink-faint);margin-top:2px}
+.cat-count{margin-left:auto;font-size:13px;color:var(--coral);background:rgba(232,132,107,.1);padding:4px 12px;border-radius:999px;white-space:nowrap}
+.books{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.book{display:flex;align-items:center;gap:9px;padding:11px 14px;border-radius:13px;text-decoration:none;color:var(--ink);
+  background:rgba(255,255,255,.6);border:1px solid rgba(228,216,205,.7);transition:.18s}
+.book:hover{transform:translateY(-2px);background:#fff;border-color:var(--coral-soft);box-shadow:0 6px 16px rgba(232,132,107,.16)}
+.book .dot{flex:none;width:7px;height:7px;border-radius:50%;background:var(--green);opacity:.7}
+.book .bt{font-size:14.5px;line-height:1.35}
+.footer{text-align:center;margin-top:40px;font-size:13px;color:var(--ink-faint)}
+@media(max-width:560px){
+  .books{grid-template-columns:repeat(2,1fr)}
+  .cat{padding:18px 16px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <span class="kicker">Reading Notes · 亮亮的小书屋</span>
+    <h1>亮亮的小书屋</h1>
+    <p class="en">My Personal Reading Library</p>
+    <p class="stat">已收录 <b>126</b> 本 · <b>10</b> 大分类 · 点书名直达笔记</p>
+  </header>
+  <nav class="nav"><a class="nav-chip" href="#%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF%E4%B8%8E%E5%BF%83%E6%99%BA">🌱 个人成长与心智 <span class="cnt">22</span></a><a class="nav-chip" href="#%E5%BF%83%E7%90%86%E4%B8%8E%E6%83%85%E7%BB%AA%E7%96%97%E6%84%88">💗 心理与情绪疗愈 <span class="cnt">21</span></a><a class="nav-chip" href="#%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%86%B3%E7%AD%96">🧠 思维与决策 <span class="cnt">11</span></a><a class="nav-chip" href="#%E8%B4%A2%E5%AF%8C%E4%B8%8E%E7%90%86%E8%B4%A2">💰 财富与理财 <span class="cnt">8</span></a><a class="nav-chip" href="#%E5%B7%A5%E4%BD%9C%E4%B8%8E%E8%81%8C%E4%B8%9A">💼 工作与职业 <span class="cnt">8</span></a><a class="nav-chip" href="#%E6%96%87%E5%AD%A6%E5%B0%8F%E8%AF%B4">📖 文学小说 <span class="cnt">29</span></a><a class="nav-chip" href="#%E5%93%B2%E5%AD%A6%E4%B8%8E%E6%80%9D%E6%83%B3">🏛️ 哲学与思想 <span class="cnt">8</span></a><a class="nav-chip" href="#%E7%A4%BE%E4%BC%9A%E4%B8%8E%E4%BA%BA%E6%96%87">🌍 社会与人文 <span class="cnt">10</span></a><a class="nav-chip" href="#%E5%81%A5%E5%BA%B7%E4%B8%8E%E8%BA%AB%E5%BF%83">🌿 健康与身心 <span class="cnt">4</span></a><a class="nav-chip" href="#%E5%86%99%E4%BD%9C%E4%B8%8E%E5%88%9B%E4%BD%9C">✍️ 写作与创作 <span class="cnt">5</span></a></nav>
+  
+    <section class="cat" id="%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF%E4%B8%8E%E5%BF%83%E6%99%BA">
+      <div class="cat-head">
+        <span class="cat-icon">🌱</span>
+        <div><h2>个人成长与心智</h2><p class="cat-desc">认知升级 · 习惯养成 · 自我突破</p></div>
+        <span class="cat-count">22 本</span>
+      </div>
+      <div class="books"><a class="book" href="0%E6%AC%A1%E4%BA%8E10000%E6%AC%A1_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">0次于10000次</span></a><a class="book" href="5%25%E7%9A%84%E6%94%B9%E5%8F%98_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">5%的改变</span></a><a class="book" href="%E4%BA%BA%E7%94%9F%E5%8D%81%E4%BA%8C%E6%B3%95%E5%88%99_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">人生十二法则</span></a><a class="book" href="%E5%85%B7%E8%BA%AB%E8%AE%A4%E7%9F%A5_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">具身认知</span></a><a class="book" href="%E5%88%BB%E6%84%8F%E7%BB%83%E4%B9%A0_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">刻意练习</span></a><a class="book" href="%E5%A6%82%E4%BD%95%E6%89%BE%E5%88%B0%E6%83%B3%E5%81%9A%E7%9A%84%E4%BA%8B_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">如何找到想做的事</span></a><a class="book" href="%E5%AD%90%E5%BC%B9%E7%AC%94%E8%AE%B0_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">子弹笔记</span></a><a class="book" href="%E5%B0%91%E5%8D%B3%E6%98%AF%E5%A4%9A_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">少即是多</span></a><a class="book" href="%E5%BF%83%E6%B5%81_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">心流</span></a><a class="book" href="%E6%89%93%E5%BC%80%E5%BF%83%E6%99%BA_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">打开心智</span></a><a class="book" href="%E6%8A%8A%E8%87%AA%E5%B7%B1%E5%8F%98%E6%88%90%E7%A8%80%E7%BC%BA%E8%B5%84%E4%BA%A7_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">把自己变成稀缺资产</span></a><a class="book" href="%E6%8B%86%E6%8E%89%E6%80%9D%E7%BB%B4%E9%87%8C%E7%9A%84%E5%A2%99_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">拆掉思维里的墙</span></a><a class="book" href="%E6%8E%8C%E6%8E%A7%E4%B9%A0%E6%83%AF_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">掌控习惯</span></a><a class="book" href="%E6%96%AF%E5%9D%A6%E7%A6%8F%E5%A4%A7%E5%AD%A6%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1%E8%AF%BE_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">斯坦福大学人生设计课</span></a><a class="book" href="%E6%97%A9%E8%B5%B7%E7%9A%84%E5%A5%87%E8%BF%B9_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">早起的奇迹</span></a><a class="book" href="%E6%9C%89%E9%99%90%E4%B8%8E%E6%97%A0%E9%99%90%E7%9A%84%E6%B8%B8%E6%88%8F_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">有限与无限的游戏</span></a><a class="book" href="%E6%BF%80%E6%B4%BB%E4%BD%A0%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%84%91_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">激活你的学习脑</span></a><a class="book" href="%E7%89%A7%E7%BE%8A%E5%B0%91%E5%B9%B4%E5%A5%87%E5%B9%BB%E4%B9%8B%E6%97%85_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">牧羊少年奇幻之旅</span></a><a class="book" href="%E7%BB%88%E8%BA%AB%E6%88%90%E9%95%BF_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">终身成长</span></a><a class="book" href="%E8%AE%A4%E7%9F%A5%E7%BA%A2%E5%88%A9_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">认知红利</span></a><a class="book" href="%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">认知觉醒</span></a><a class="book" href="%E9%80%86%E5%95%86_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">逆商</span></a></div>
+    </section>
+    <section class="cat" id="%E5%BF%83%E7%90%86%E4%B8%8E%E6%83%85%E7%BB%AA%E7%96%97%E6%84%88">
+      <div class="cat-head">
+        <span class="cat-icon">💗</span>
+        <div><h2>心理与情绪疗愈</h2><p class="cat-desc">内在探索 · 情绪管理 · 自我和解</p></div>
+        <span class="cat-count">21 本</span>
+      </div>
+      <div class="books"><a class="book" href="%E4%B9%9F%E8%AE%B8%E4%BD%A0%E8%AF%A5%E6%89%BE%E4%B8%AA%E4%BA%BA%E8%81%8A%E8%81%8A_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">也许你该找个人聊聊</span></a><a class="book" href="%E5%83%8F%E9%98%BF%E5%BE%B7%E5%8B%92%E4%B8%80%E6%A0%B7%E6%80%9D%E8%80%83%E5%92%8C%E7%94%9F%E6%B4%BB_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">像阿德勒一样思考和生活</span></a><a class="book" href="%E5%85%81%E8%AE%B8%E4%BD%A0%E8%87%AA%E5%B7%B1%E9%81%87%E8%A7%81%E5%AE%8C%E6%95%B4%E7%9A%84%E8%87%AA%E5%B7%B1_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">允许你自己遇见完整的自己</span></a><a class="book" href="%E5%9B%A0%E4%B8%BA%E6%98%AF%E4%BD%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BA%BA%E7%94%9F%E5%91%80_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">因为是你自己的人生呀</span></a><a class="book" href="%E5%B0%91%E6%9C%89%E4%BA%BA%E8%B5%B0%E7%9A%84%E8%B7%AF_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">少有人走的路</span></a><a class="book" href="%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">当下的力量</span></a><a class="book" href="%E6%80%9D%E7%BB%B4%E7%9A%84%E5%9B%9A%E5%BE%92_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">思维的囚徒</span></a><a class="book" href="%E6%88%91%E4%BB%AC%E5%86%85%E5%BF%83%E7%9A%84%E5%86%B2%E7%AA%81_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">我们内心的冲突</span></a><a class="book" href="%E6%AC%A1%E7%AC%AC%E8%8A%B1%E5%BC%80_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">次第花开</span></a><a class="book" href="%E6%B6%88%E5%A4%B1%E7%9A%84%E5%A4%9A%E5%B7%B4%E8%83%BA_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">消失的多巴胺</span></a><a class="book" href="%E6%B7%B1%E5%A4%9C%E5%8A%A0%E6%B2%B9%E7%AB%99%E9%81%87%E8%A7%81%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">深夜加油站遇见苏格拉底</span></a><a class="book" href="%E7%84%A6%E8%99%91%E7%9A%84%E4%BA%BA_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">焦虑的人</span></a><a class="book" href="%E7%A9%BA%E6%B4%9E%E7%9A%84%E5%BF%83_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">空洞的心</span></a><a class="book" href="%E7%AB%99%E5%9C%A8%E8%87%AA%E5%B7%B1%E8%BF%99%E8%BE%B9_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">站在自己这边</span></a><a class="book" href="%E8%87%AA%E5%8D%91%E4%B8%8E%E8%B6%85%E8%B6%8A_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">自卑与超越</span></a><a class="book" href="%E8%A2%AB%E8%AE%A8%E5%8E%8C%E7%9A%84%E5%8B%87%E6%B0%94_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">被讨厌的勇气</span></a><a class="book" href="%E8%AF%B7%E5%81%9C%E6%AD%A2%E6%97%A0%E6%95%88%E6%80%9D%E8%80%83_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">请停止无效思考</span></a><a class="book" href="%E8%B1%A1%E4%B8%8E%E9%AA%91%E8%B1%A1%E4%BA%BA_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">象与骑象人</span></a><a class="book" href="%E8%BA%B2%E5%9C%A8%E8%9A%8A%E5%AD%90%E5%90%8E%E9%9D%A2%E7%9A%84%E5%A4%A7%E8%B1%A1_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">躲在蚊子后面的大象</span></a><a class="book" href="%E8%BD%AF%E7%98%BE_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">软瘾</span></a><a class="book" href="%E9%81%87%E8%A7%81%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">遇见未知的自己</span></a></div>
+    </section>
+    <section class="cat" id="%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%86%B3%E7%AD%96">
+      <div class="cat-head">
+        <span class="cat-icon">🧠</span>
+        <div><h2>思维与决策</h2><p class="cat-desc">理性思考 · 判断 · 认知偏误</p></div>
+        <span class="cat-count">11 本</span>
+      </div>
+      <div class="books"><a class="book" href="%E4%BA%8B%E5%AE%9E_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">事实</span></a><a class="book" href="%E4%BA%BA%E4%B9%8B%E5%A4%A9%E6%80%A7_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">人之天性</span></a><a class="book" href="%E5%8E%9F%E5%88%99_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">原则</span></a><a class="book" href="%E5%8F%8D%E8%84%86%E5%BC%B1_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">反脆弱</span></a><a class="book" href="%E5%99%AA%E5%A3%B0_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">噪声</span></a><a class="book" href="%E6%80%9D%E8%80%83%E5%BF%AB%E4%B8%8E%E6%85%A2_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">思考快与慢</span></a><a class="book" href="%E7%A8%80%E7%BC%BA_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">稀缺</span></a><a class="book" href="%E8%B4%AB%E7%A9%B7%E7%9A%84%E6%9C%AC%E8%B4%A8_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">贫穷的本质</span></a><a class="book" href="%E9%9A%8F%E6%9C%BA%E6%BC%AB%E6%AD%A5%E7%9A%84%E5%82%BB%E7%93%9C_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">随机漫步的傻瓜</span></a><a class="book" href="%E9%9D%9E%E5%AF%B9%E7%A7%B0%E9%A3%8E%E9%99%A9_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">非对称风险</span></a><a class="book" href="%E9%BB%91%E5%A4%A9%E9%B9%85_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">黑天鹅</span></a></div>
+    </section>
+    <section class="cat" id="%E8%B4%A2%E5%AF%8C%E4%B8%8E%E7%90%86%E8%B4%A2">
+      <div class="cat-head">
+        <span class="cat-icon">💰</span>
+        <div><h2>财富与理财</h2><p class="cat-desc">金钱观 · 投资 · 财务自由</p></div>
+        <span class="cat-count">8 本</span>
+      </div>
+      <div class="books"><a class="book" href="%E5%B0%8F%E7%8B%97%E9%92%B1%E9%92%B1_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">小狗钱钱</span></a><a class="book" href="%E6%85%A2%E6%85%A2%E5%8F%98%E5%AF%8C_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">慢慢变富</span></a><a class="book" href="%E6%9C%89%E9%92%B1%E4%BA%BA%E5%92%8C%E4%BD%A0%E6%83%B3%E7%9A%84%E4%B8%8D%E4%B8%80%E6%A0%B7_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">有钱人和你想的不一样</span></a><a class="book" href="%E7%A9%B7%E6%9F%A5%E7%90%86%E5%AE%9D%E5%85%B8_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">穷查理宝典</span></a><a class="book" href="%E7%A9%B7%E7%88%B8%E7%88%B8%E5%AF%8C%E7%88%B8%E7%88%B8_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">穷爸爸富爸爸</span></a><a class="book" href="%E7%BA%B3%E7%93%A6%E5%B0%94%E5%AE%9D%E5%85%B8_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">纳瓦尔宝典</span></a><a class="book" href="%E8%A6%81%E9%92%B1%E8%BF%98%E6%98%AF%E8%A6%81%E7%94%9F%E6%B4%BB_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">要钱还是要生活</span></a><a class="book" href="%E9%87%91%E9%92%B1%E5%BF%83%E7%90%86%E5%AD%A6_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">金钱心理学</span></a></div>
+    </section>
+    <section class="cat" id="%E5%B7%A5%E4%BD%9C%E4%B8%8E%E8%81%8C%E4%B8%9A">
+      <div class="cat-head">
+        <span class="cat-icon">💼</span>
+        <div><h2>工作与职业</h2><p class="cat-desc">职场进阶 · 效率 · 意义</p></div>
+        <span class="cat-count">8 本</span>
+      </div>
+      <div class="books"><a class="book" href="%E5%B7%A5%E4%BD%9C%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">工作消费主义和新穷人</span></a><a class="book" href="%E5%B7%A5%E4%BD%9C%E7%9A%84%E6%84%8F%E4%B9%89_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">工作的意义</span></a><a class="book" href="%E6%88%91%E4%BB%AC%E5%BF%85%E9%A1%BB%E5%B7%A5%E4%BD%9C%E5%90%97_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">我们必须工作吗</span></a><a class="book" href="%E7%B2%BE%E8%BF%9B_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">精进</span></a><a class="book" href="%E8%83%BD%E5%8A%9B%E9%99%B7%E9%98%B1_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">能力陷阱</span></a><a class="book" href="%E8%B7%83%E8%BF%81_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">跃迁</span></a><a class="book" href="%E8%BF%9C%E8%A7%81_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">远见</span></a><a class="book" href="%E9%AB%98%E6%95%88%E8%83%BD%E4%BA%BA%E5%A3%AB%E7%9A%847%E4%B8%AA%E4%B9%A0%E6%83%AF_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">高效能人士的7个习惯</span></a></div>
+    </section>
+    <section class="cat" id="%E6%96%87%E5%AD%A6%E5%B0%8F%E8%AF%B4">
+      <div class="cat-head">
+        <span class="cat-icon">📖</span>
+        <div><h2>文学小说</h2><p class="cat-desc">经典文学 · 小说 · 人生叙事</p></div>
+        <span class="cat-count">29 本</span>
+      </div>
+      <div class="books"><a class="book" href="%E4%BD%A0%E5%BD%93%E5%83%8F%E9%B8%9F%E9%A3%9E%E5%BE%80%E4%BD%A0%E7%9A%84%E5%B1%B1_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">你当像鸟飞往你的山</span></a><a class="book" href="%E5%8D%95%E8%BA%AB%E5%81%8F%E8%A7%81_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">单身偏见</span></a><a class="book" href="%E5%8D%A1%E6%8B%89%E9%A9%AC%E4%BD%90%E5%A4%AB%E5%85%84%E5%BC%9F_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">卡拉马佐夫兄弟</span></a><a class="book" href="%E5%8F%98%E5%BD%A2%E8%AE%B0_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">变形记</span></a><a class="book" href="%E5%9C%B0%E4%B8%8B%E5%AE%A4%E6%89%8B%E8%AE%B0_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">地下室手记</span></a><a class="book" href="%E5%A5%A5%E5%85%B0%E5%A4%9A_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">奥兰多</span></a><a class="book" href="%E5%A5%A5%E5%8B%83%E6%B4%9B%E8%8E%AB%E5%A4%AB_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">奥勃洛莫夫</span></a><a class="book" href="%E5%A5%A5%E5%BE%B7%E8%B5%9B_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">奥德赛</span></a><a class="book" href="%E5%B1%80%E5%A4%96%E4%BA%BA_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">局外人</span></a><a class="book" href="%E6%88%91%E4%BB%AC%E7%94%9F%E6%B4%BB%E5%9C%A8%E5%B7%A8%E5%A4%A7%E7%9A%84%E5%B7%AE%E8%B7%9D%E9%87%8C_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">我们生活在巨大的差距里</span></a><a class="book" href="%E6%98%AF%E5%AE%B6%E4%BA%BA%E4%B9%9F%E6%98%AF%E5%87%B6%E6%89%8B_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">是家人也是凶手</span></a><a class="book" href="%E6%9A%AE%E8%89%B2%E5%B0%86%E5%B0%BD_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">暮色将尽</span></a><a class="book" href="%E6%9D%80%E6%AD%BB%E4%B8%80%E5%8F%AA%E7%9F%A5%E6%9B%B4%E9%B8%9F_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">杀死一只知更鸟</span></a><a class="book" href="%E6%B4%BB%E7%9D%80_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">活着</span></a><a class="book" href="%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">浮生六记</span></a><a class="book" href="%E6%B5%B7%E8%BE%B9%E7%9A%84%E5%8D%A1%E5%A4%AB%E5%8D%A1_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">海边的卡夫卡</span></a><a class="book" href="%E6%B8%85%E7%AE%97%E5%B7%B2%E6%AF%95_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">清算已毕</span></a><a class="book" href="%E6%B8%BA%E5%B0%8F%E4%B8%80%E7%94%9F_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">渺小一生</span></a><a class="book" href="%E7%8B%AC%E5%B1%85%E7%9A%84%E4%B8%80%E5%B9%B4_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">独居的一年</span></a><a class="book" href="%E7%94%9F%E6%AD%BB%E7%96%B2%E5%8A%B3_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">生死疲劳</span></a><a class="book" href="%E7%99%BD%E9%B2%B8_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">白鲸</span></a><a class="book" href="%E7%BA%A2%E6%A5%BC%E6%A2%A6_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">红楼梦</span></a><a class="book" href="%E8%80%81%E4%BA%BA%E4%B8%8E%E6%B5%B7_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">老人与海</span></a><a class="book" href="%E8%AE%B8%E4%B8%89%E8%A7%82%E5%8D%96%E8%A1%80%E8%AE%B0_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">许三观卖血记</span></a><a class="book" href="%E8%BE%BE%E6%91%A9%E6%B5%81%E6%B5%AA%E8%80%85_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">达摩流浪者</span></a><a class="book" href="%E9%81%A5%E8%BF%9C%E7%9A%84%E6%95%91%E4%B8%96%E4%B8%BB_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">遥远的救世主</span></a><a class="book" href="%E9%86%92%E6%9D%A5%E7%9A%84%E5%A5%B3%E6%80%A7_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">醒来的女性</span></a><a class="book" href="%E9%B1%BC%E6%B2%A1%E6%9C%89%E8%84%9A_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">鱼没有脚</span></a><a class="book" href="%E9%BC%A0%E7%96%AB_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">鼠疫</span></a></div>
+    </section>
+    <section class="cat" id="%E5%93%B2%E5%AD%A6%E4%B8%8E%E6%80%9D%E6%83%B3">
+      <div class="cat-head">
+        <span class="cat-icon">🏛️</span>
+        <div><h2>哲学与思想</h2><p class="cat-desc">存在 · 意义 · 智慧</p></div>
+        <span class="cat-count">8 本</span>
+      </div>
+      <div class="books"><a class="book" href="%E4%B8%8A%E5%B8%9D%E6%8E%B7%E9%AA%B0%E5%AD%90%E5%90%97_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">上帝掷骰子吗</span></a><a class="book" href="%E4%BA%86%E5%87%A1%E5%9B%9B%E8%AE%AD_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">了凡四训</span></a><a class="book" href="%E5%90%9B%E4%B8%BB%E8%AE%BA_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">君主论</span></a><a class="book" href="%E5%93%B2%E5%AD%A6%E5%AE%B6%E4%BB%AC%E9%83%BD%E5%B9%B2%E4%BA%86%E4%BA%9B%E4%BB%80%E4%B9%88_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">哲学家们都干了些什么</span></a><a class="book" href="%E5%A8%B1%E4%B9%90%E8%87%B3%E6%AD%BB_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">娱乐至死</span></a><a class="book" href="%E7%A6%85%E4%B8%8E%E6%91%A9%E6%89%98%E8%BD%A6%E7%BB%B4%E4%BF%AE%E8%89%BA%E6%9C%AF_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">禅与摩托车维修艺术</span></a><a class="book" href="%E8%A5%BF%E8%A5%BF%E5%BC%97%E7%A5%9E%E8%AF%9D_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">西西弗神话</span></a><a class="book" href="%E9%B1%BC%E4%B8%8D%E5%AD%98%E5%9C%A8_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">鱼不存在</span></a></div>
+    </section>
+    <section class="cat" id="%E7%A4%BE%E4%BC%9A%E4%B8%8E%E4%BA%BA%E6%96%87">
+      <div class="cat-head">
+        <span class="cat-icon">🌍</span>
+        <div><h2>社会与人文</h2><p class="cat-desc">社会观察 · 性别 · 历史文明</p></div>
+        <span class="cat-count">10 本</span>
+      </div>
+      <div class="books"><a class="book" href="%E4%B9%8C%E5%90%88%E4%B9%8B%E4%BC%97_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">乌合之众</span></a><a class="book" href="%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">人类简史</span></a><a class="book" href="%E5%8E%8C%E5%A5%B3_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">厌女</span></a><a class="book" href="%E5%90%8E%E7%89%A9%E6%AC%B2%E6%97%B6%E4%BB%A3%E7%9A%84%E6%9D%A5%E4%B8%B4_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">后物欲时代的来临</span></a><a class="book" href="%E5%A5%B9%E4%BB%AC%E4%BD%95%E4%BB%A5%E4%B8%8D%E5%90%8C_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">她们何以不同</span></a><a class="book" href="%E6%88%90%E4%B8%BA%E6%B3%A2%E4%BC%8F%E5%A8%83_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">成为波伏娃</span></a><a class="book" href="%E6%9D%8E%E9%93%B6%E6%B2%B3%E8%AF%B4%E7%88%B1%E6%83%85_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">李银河说爱情</span></a><a class="book" href="%E7%A4%BE%E4%BC%9A%E5%BF%83%E7%90%86%E5%AD%A6_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">社会心理学</span></a><a class="book" href="%E7%AC%AC%E4%BA%8C%E6%80%A7_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">第二性</span></a><a class="book" href="%E8%87%AA%E7%A7%81%E7%9A%84%E5%9F%BA%E5%9B%A0_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">自私的基因</span></a></div>
+    </section>
+    <section class="cat" id="%E5%81%A5%E5%BA%B7%E4%B8%8E%E8%BA%AB%E5%BF%83">
+      <div class="cat-head">
+        <span class="cat-icon">🌿</span>
+        <div><h2>健康与身心</h2><p class="cat-desc">身心健康 · 精力 · 生活</p></div>
+        <span class="cat-count">4 本</span>
+      </div>
+      <div class="books"><a class="book" href="%E6%88%90%E7%98%BE_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">成瘾</span></a><a class="book" href="%E6%89%8B%E6%9C%BA%E5%A4%A7%E8%84%91_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">手机大脑</span></a><a class="book" href="%E6%96%AD%E8%88%8D%E7%A6%BB_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">断舍离</span></a><a class="book" href="%E8%B6%85%E8%B6%8A%E7%99%BE%E5%B2%81_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">超越百岁</span></a></div>
+    </section>
+    <section class="cat" id="%E5%86%99%E4%BD%9C%E4%B8%8E%E5%88%9B%E4%BD%9C">
+      <div class="cat-head">
+        <span class="cat-icon">✍️</span>
+        <div><h2>写作与创作</h2><p class="cat-desc">写作 · 表达 · 内容创作</p></div>
+        <span class="cat-count">5 本</span>
+      </div>
+      <div class="books"><a class="book" href="%E4%B8%80%E6%9C%AC%E5%B0%8F%E5%B0%8F%E7%9A%84%E7%BA%A2%E8%89%B2%E5%86%99%E4%BD%9C%E4%B9%A6_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">一本小小的红色写作书</span></a><a class="book" href="%E5%AD%A6%E4%BC%9A%E5%86%99%E4%BD%9C_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">学会写作</span></a><a class="book" href="%E6%95%85%E4%BA%8B%E7%BB%8F%E6%B5%8E%E5%AD%A6_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">故事经济学</span></a><a class="book" href="%E6%95%91%E7%8C%AB%E5%92%AA_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">救猫咪</span></a><a class="book" href="%E7%BC%96%E5%89%A7%E7%9A%84%E8%89%BA%E6%9C%AF_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html"><span class="dot"></span><span class="bt">编剧的艺术</span></a></div>
+    </section>
+  <footer class="footer">亮亮的小书屋 · 点击书名打开对应读书笔记</footer>
+</div>
+</body>
+</html>
